@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image, ImageBackground, Button, TouchableHighlight } from 'react-native';
 import Selfie from '../../Pictures/Selfie.jpg';
 import { Actions } from 'react-native-router-flux';
-import Logo from '../../Pictures/berries.jpg'
+import Logo from '../../Pictures/berries.jpg';
+import PostRecipe from './PostRecipe';
 
 class Profile extends Component {
 
-    
     render(){
     
         return (
@@ -20,6 +20,7 @@ class Profile extends Component {
                     <Text style={styles.password}>Password: <Text style={styles.changepw} >Change Password</Text></Text>
                 </View>
                 <Button title='Logout' onPress={()=> {Actions.Login()}} />
+                <PostRecipe />
                 </ImageBackground>
             </View>
         )
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
         marginTop: 15,
     },
     changepw: {
-        color: 'red',
+        color: '#bc3434',
     }
 
 })

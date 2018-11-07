@@ -22,12 +22,14 @@ const styles = StyleSheet.create({
   h1: {
     textAlign: 'center',
     fontSize: 40,
-    color: 'red',
+    color: 'white',
     fontWeight: "700",
-    opacity: .7,
-    backgroundColor: 'gray',
+    backgroundColor: 'black',
     padding: 20,
-    marginTop: -200,
+    borderWidth: 3,
+    borderColor: 'black',
+    marginTop: -350,
+    
   },
   container: {
     flex:1,

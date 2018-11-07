@@ -32,8 +32,9 @@ class Recipes extends Component {
         return (
             <View style={styles.container}>
                 <ImageBackground style={styles.bg} source={Logo}>
-                {recipe}
                 <Text style={styles.text}>Recipes You Can Make</Text>
+                {recipe}
+                
                 </ImageBackground>
             </View>
         )
@@ -47,6 +48,7 @@ const styles = StyleSheet.create({
     text: {
         color: 'gray',
         textAlign: 'center',
+        marginTop: -20,
     },
     bg: {
         flex: 1,

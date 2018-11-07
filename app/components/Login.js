@@ -8,8 +8,7 @@ class Login extends Component {
     render(){
         return (
             <View style={styles.container}>
-                <ImageBackground style={styles.logo} source={Logo}>   
-                    <Text>RECIPEdia</Text>           
+                <ImageBackground style={styles.logo} source={Logo}>             
                     <LoginForm {...this.props} />
                 </ImageBackground>
             </View>
