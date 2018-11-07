@@ -4,7 +4,7 @@ import { Actions } from 'react-native-router-flux';
 import Logo from '../../Pictures/berries.jpg';
 import About from './About';
 import Login from './Login';
-import Routes from './Routes';
+// import Routes from './Routes';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
         <ImageBackground style={styles.logo} source={Logo}>
         <Text style={styles.h1}>What's In Your Fridge?</Text>
         <About />
-        <Routes />
+        {/* <Routes /> */}
         </ImageBackground>
     </View>
   );

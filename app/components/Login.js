@@ -3,6 +3,8 @@ import { StyleSheet, View, Text, ImageBackground } from 'react-native';
 import Logo from '../../Pictures/woodtable.jpg';
 import LoginForm from './LoginForm';
 
+
+
 class Login extends Component {
     render(){
         return (

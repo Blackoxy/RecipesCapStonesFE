@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 import Home from './app/components/Home';
@@ -14,22 +6,26 @@ import About from './app/components/About';
 import Login from './app/components/Login';
 import Profile from './app/components/Profile';
 import Recipes from './app/components/Recipes';
-import {NativeRouter, Switch, Route} from 'react-router-native';
+import {NativeRouter, Switch, Route, Link} from 'react-router-native';
 import Routes from './app/components/Routes'
 
 export default class App extends Component{
 
-
   render() {
     return (
-     
       <View style={styles.container}>
-       
         <ImageBackground style={styles.backgroundImage} source={logo}>
-          <Routes />
+{/*         
+          <NativeRouter>
+            <Switch>
+            <Route exact path='/' component={Login}/>
+            <Route exact path='/home' component={Home} />
+            </Switch>
+          </NativeRouter>
+           */}
+           <Routes />
         </ImageBackground>
       </View>
-     
     )
   }
 }

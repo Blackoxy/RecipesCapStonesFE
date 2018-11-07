@@ -9,7 +9,6 @@ const Recipe = ({name, picture, description, ingredients}) => {
         <Text>{description}</Text>
         <Text>{ingredients}</Text>
         </View>
-
     )
 }
 

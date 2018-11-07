@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, TextInput, Text, Button } from 'react-native';
-
-
+import { NativeRouter, Route, Link } from "react-router-native";
+import Home from './Home';
+import {Actions} from 'react-native-router-flux';
 
 const LoginForm = () => {
         return (
@@ -9,6 +10,7 @@ const LoginForm = () => {
                 <Text>SIGN-IN</Text>
                 <TextInput placeholder='Username or Email' style={styles.input} />
                 <TextInput placeholder='Enter Password' style={styles.input} />
+                <Button title='Login' onPress={Actions.Home} />
             </View>
         )
     }
