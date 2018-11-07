@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
         <ImageBackground style={styles.logo} source={Logo}>
-        <Text style={styles.h1}>What's In Your Fridge?</Text>
+        <Text style={styles.h1}>RECIPEDia</Text>
         <About />
         {/* <Routes /> */}
         </ImageBackground>

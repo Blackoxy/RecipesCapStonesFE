@@ -19,7 +19,7 @@ class Profile extends Component {
                     <Text style={styles.username}>Username: Dev.AnhNguyen</Text>
                     <Text style={styles.password}>Password: <Text style={styles.changepw} >Change Password</Text></Text>
                 </View>
-                <Button title='Logout' onPress={()=> 5}></Button>
+                <Button title='Logout' onPress={()=> {Actions.Login()}} />
                 </ImageBackground>
             </View>
         )

@@ -7,14 +7,14 @@ import Recipes from './Recipes';
 import Login from './Login'
 
 const Routes = () => (
-   <Router hideNavBar= "true" >
+   <Router hideNavBar={true} >
       <Scene key = "root">
-        <Scene key = 'login' title='login' component={Login} initial = {true} />
-      <Scene key = 'tabBar' tabs={true} tabBarPosition="bottom" >
-         <Scene key = "home" component = {Home} title = "Home" />
-         <Scene key = "profile" component = {Profile} title = 'Profile' />
-         <Scene key = "search" component = {Search} title = 'Search' />
-         <Scene key = "recipes" component = {Recipes} title = 'Recipes'/>
+        <Scene key = 'Login' component={Login} initial = {true} hideNavBar={true}/>
+      <Scene key = 'tabBar' tabs={true} tabBarPosition="bottom" hideNavBar={true}>
+         <Scene key = "Home" component = {Home}  />
+         <Scene key = "Profile" component = {Profile}  />
+         <Scene key = "Search" component = {Search} />
+         <Scene key = "Recipes" component = {Recipes}/>
       </Scene>
       </Scene>
    </Router>
