@@ -5,15 +5,15 @@ const PostRecipe = () => {
     return (
         <View style={styles.container} >
             <Text style={styles.info}>Share Your Delicious Recipe</Text>
-            <TextInput style={styles.name} placeholder='Name of Recipe'>
+            <TextInput style={styles.name} underlineColorAndroid="transparent" placeholder='Name of Recipe'>
             </TextInput>
-            <TextInput style={styles.pic} placeholder='Picture URL'>
+            <TextInput style={styles.pic} underlineColorAndroid="transparent" placeholder='Picture URL'>
             </TextInput>
-            <TextInput style={styles.des} placeholder='Description'>
+            <TextInput style={styles.des} underlineColorAndroid="transparent" placeholder='Description'>
             </TextInput>
-            <TextInput style={styles.ing} placeholder='List Ingredients'>
+            <TextInput style={styles.ing} underlineColorAndroid="transparent" placeholder='List Ingredients'>
             </TextInput>
-            <Button style={styles.button} title='Post!' onPress={()=> 5} />
+            <Button style={styles.button} color='#55b4d1' title='Post!' onPress={()=> 5} />
         </View>
     )
 }
@@ -21,15 +21,14 @@ const PostRecipe = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 20
+        marginTop: 20,
+        justifyContent: 'center'
     },
     info: {
         fontSize: 18,
         color: 'white',
         textAlign: 'center',
         fontWeight: '500',
-        borderWidth: 2,
-        borderColor: 'black',
         backgroundColor: 'black',
     },
     name: {
@@ -37,8 +36,6 @@ const styles = StyleSheet.create({
         width: '100%',
         fontWeight: '400',
         padding: 15,
-        backgroundColor: 'grey',
-        opacity: .8,
         borderWidth: 1,
         borderColor: 'black'
         
@@ -48,8 +45,6 @@ const styles = StyleSheet.create({
         width: '100%',
         fontWeight: '400',
         padding: 15,
-        backgroundColor: 'grey',
-        opacity: .8,
         borderWidth: 1,
         borderColor: 'black'
     },
@@ -58,8 +53,6 @@ const styles = StyleSheet.create({
         width: '100%',
         fontWeight: '400',
         padding: 15,
-        backgroundColor: 'grey',
-        opacity: .8,
         borderWidth: 1,
         borderColor: 'black'
     },
@@ -68,16 +61,15 @@ const styles = StyleSheet.create({
         width: '100%',
         fontWeight: '400',
         padding: 15,
-        backgroundColor: 'grey',
-        opacity: .8, 
         borderWidth: 1,
         borderColor: 'black'
     },
     button: {
         width: "10%",
         margin: 15, 
-        backgroundColor: 'grey', 
-        color: 'white'
+        padding: 10,
+        backgroundColor: 'black', 
+        color: 'black'
     }
 
 

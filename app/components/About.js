@@ -13,12 +13,19 @@ const About = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: -10
+    
   },
   instructions: {
     textAlign: 'center',
     color: 'black',
-    marginTop: 50,
+    marginTop: 40,
+    margin: 20,
+    fontSize: 14,
+    padding: 25,
+    borderWidth: 1,
+    borderColor: '#55b4d1',
+    borderRadius: 16,
+    fontWeight: "600",
   },
 });
 

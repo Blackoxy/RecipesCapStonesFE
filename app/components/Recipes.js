@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, ImageBackground } from 'react-native';
-import Logo from '../../Pictures/berries.jpg';
+import Logo from '../../Pictures/fruitsflowers.jpg';
 import { Image } from 'native-base';
 import Recipe from './Recipe';
 

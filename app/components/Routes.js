@@ -12,9 +12,9 @@ const Routes = () => (
         <Scene key = 'Login' component={Login} initial = {true} hideNavBar={true}/>
       <Scene key = 'tabBar' tabs={true} tabBarPosition="bottom" hideNavBar={true}>
          <Scene key = "Home" component = {Home}  />
-         <Scene key = "Profile" component = {Profile}  />
-         <Scene key = "Search" component = {Search} />
-         <Scene key = "Recipes" component = {Recipes}/>
+         <Scene title='Profile' key = "Profile" component = {Profile}  />
+         <Scene title= 'Search' key = "Search" component = {Search} />
+         <Scene title='Recipes' key = "Recipes" component = {Recipes}/>
       </Scene>
       </Scene>
    </Router>

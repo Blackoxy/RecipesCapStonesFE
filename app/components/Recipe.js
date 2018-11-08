@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
         marginTop: 1,
         textAlign: 'center',
         fontSize: 14,
-        color: 'black'
+        color: 'black',
+        fontWeight: "600",
     },
     imageContainer: {
         flexDirection: 'row',
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
         width: 128,
         borderRadius: 64,
         borderWidth: 5,
-        borderColor: '#bc3434',
+        borderColor: '#55b4d1',
         opacity: .8
         
     }

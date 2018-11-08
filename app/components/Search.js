@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, ImageBackground, TextInput, Button, Alert } from 'react-native';
-import Logo from '../../Pictures/berries.jpg';
+import Logo from '../../Pictures/fruitsflowers.jpg';
 import {SearchBar} from 'react-native-elements';
 import {Actions} from 'react-native-router-flux';
 import './Routes';
@@ -20,10 +20,10 @@ class Search extends Component {
         return (
             <View style={styles.container}>
                 <ImageBackground style={styles.bg} source={Logo}>
-                <Text style={styles.text}>Search For Recipes</Text>
+                <Text style={styles.text}>Find A Recipe</Text>
                 <Text style={styles.info}>Start typing in the ingredients you have and we will get you cookin!</Text>
                 <TextInput 
-                    style={{height: 45,width: "100%",borderColor: "gray",borderWidth: 2}}
+                    style={{height: 45,width: "90%",borderColor: "gray",borderWidth: 2, borderRadius: 16, alignSelf: 'center'}}
                     placeholder="Enter Ingredient"
                     onChangeText={TextInputValue => this.setState({TextInputValue})}
                     underlineColorAndroid="transparent" />
@@ -33,10 +33,10 @@ class Search extends Component {
                         style={styles.button}
                         onPress={this.buttonClickListener}
                         title="+"
-                        color="#00B0FF"
+                        color='#55b4d1'
                     />
                 </View>
-                    <Button style={styles.submit} title='Search!' onPress= {() => {Actions.Recipes(); }}>
+                    <Button color='#55b4d1' style={styles.submit} title='Search!' onPress= {() => {Actions.Recipes(); }}>
                     <Text>
                         Search For Recipes
                     </Text>
@@ -53,6 +53,8 @@ const styles = StyleSheet.create({
         // alignItems: 'center',
     },
     text: {
+        marginTop: 20,
+        fontWeight: '700',
         color: 'white',
         textAlign: 'center',
         fontSize: 18,
@@ -60,8 +62,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'black'
     },
     button: {
-        flexDirection: 'row',
-        alignItems: 'flex-end'
+        
+        alignSelf: 'center',
+        
     },
     ingre: {
         width: '100%',
@@ -76,10 +79,10 @@ const styles = StyleSheet.create({
     info: {
         textAlign: 'center',
         fontWeight: "600",
-        color: 'white',
+        color: 'black',
         padding: 22,
-        backgroundColor: 'gray',
-        opacity: .8,
+        
+        
     },
     bg: {
         flex: 1,
