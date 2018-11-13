@@ -23,7 +23,7 @@ class Recipes extends Component {
         ?  this.state.recipe.map(recipe => {
             return (
                 <Recipe 
-                key={recipe.id}
+                key={recipe.name}
                 {...recipe}
                 />
             )

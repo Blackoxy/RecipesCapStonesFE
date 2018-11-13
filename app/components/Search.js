@@ -27,8 +27,16 @@ class Search extends Component {
                     placeholder="Enter Ingredient"
                     onChangeText={TextInputValue => this.setState({TextInputValue})}
                     underlineColorAndroid="transparent" />
-                    { this.state.ingredients.map(ingredient => <Text style={styles.ingre}>{ingredient}</Text>) } 
-                 <View style={[{ width: "10%", margin: 15, backgroundColor: 'grey', color: 'white' }]}>
+                    {this.state.ingredients.map(ingredient => {
+                        return (
+                                <Text 
+                                key={ingredient} 
+                                style={styles.ingre}>
+                                {ingredient}
+                        </Text> )
+                        })
+                    } 
+                 <View style={[{ width: "10%", margin: 10, backgroundColor: 'grey', color: 'white', alignSelf: 'center' }]}>
                     <Button
                         style={styles.button}
                         onPress={this.buttonClickListener}
@@ -62,13 +70,14 @@ const styles = StyleSheet.create({
         backgroundColor: 'black'
     },
     button: {
-        
         alignSelf: 'center',
-        
     },
     ingre: {
         width: '100%',
-        padding: 10,
+        padding: 8,
+        textAlign: 'center',
+        fontWeight: '400'
+
     },
     submit: {
         width: '100%',
@@ -80,14 +89,11 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: "600",
         color: 'black',
-        padding: 22,
-        
-        
+        padding: 22, 
     },
     bg: {
         flex: 1,
-        resizeMode: 'cover',
-        
+        resizeMode: 'cover',   
     }
 })
 
